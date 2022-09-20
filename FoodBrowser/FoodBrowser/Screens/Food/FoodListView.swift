@@ -23,12 +23,13 @@ final class FoodListView: UIView {
         return tableView
     }()
 
-    private(set) lazy var errorStack: UIStackView = {
-        let stackView = UIStackView()
-            .styleAxis(.vertical)
-            .styleAlignment(.center)
+    private(set) lazy var errorLabel: UILabel = {
+        let label = UILabel()
+            .styleNumberOfLines(0)
+            .styleFont(.preferredFont(forTextStyle: .subheadline))
+            .styleTextColor(.systemRed)
 
-        return stackView
+        return label
     }()
 
     private(set) lazy var activityIndicationView = UIActivityIndicatorView(style: .large)
@@ -54,21 +55,18 @@ final class FoodListView: UIView {
     private func setupUI() {
         backgroundColor = .systemBackground
 
-        errorStack
+        let errorStack = UIStackView(arrangedSubviews: [errorLabel])
+            .styleAxis(.vertical)
+            .styleAlignment(.center)
             .styleParentView(self)
             .styleMakeConstraints {
                 $0.top.equalTo(safeAreaLayoutGuide.snp.top)
                 $0.leading.trailing.equalTo(safeAreaLayoutGuide)
             }
 
-        UILabel()
-            .styleParentView(errorStack)
-            .styleText(nil)
-
         searchBar
             .styleParentView(self)
             .styleMakeConstraints {
-//                $0.top.equalTo(safeAreaLayoutGuide.snp.top)
                 $0.top.equalTo(errorStack.snp.bottom)
                 $0.leading.trailing.equalTo(safeAreaLayoutGuide)
             }

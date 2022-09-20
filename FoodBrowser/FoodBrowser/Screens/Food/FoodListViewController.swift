@@ -48,7 +48,7 @@ final class FoodListViewController: UIViewController, AnyMainView {
         dataSource = DataSource(tableView: mainView.tableView, cellProvider: { tableView, indexPath, model -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(with: FoodListTableViewCell.self, for: indexPath)
             cell.bind(with: model)
-            
+
             return cell
         })
     }
@@ -83,9 +83,10 @@ final class FoodListViewController: UIViewController, AnyMainView {
                         self?.mainView.activityIndicationView.startAnimating()
                     case .finished:
                         self?.mainView.activityIndicationView.stopAnimating()
+                        self?.mainView.errorLabel.text = nil
                     case .failed(let error):
                         self?.mainView.activityIndicationView.stopAnimating()
-                        self?.showError(error)
+                        self?.mainView.errorLabel.text = error.localizedDescription
                 }
             }
             .store(in: &cancellables)
