@@ -32,6 +32,11 @@
 		A0DA597228DA61440060577C /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA597128DA61440060577C /* HttpClient.swift */; };
 		A0DA597428DA615D0060577C /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA597328DA615D0060577C /* HttpError.swift */; };
 		A0DA597628DA617A0060577C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA597528DA617A0060577C /* API.swift */; };
+		A0DA597A28DA620D0060577C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA597928DA620D0060577C /* Food.swift */; };
+		A0DA597D28DA62890060577C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA597C28DA62890060577C /* Configuration.swift */; };
+		A0DA598028DA63770060577C /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA597F28DA63770060577C /* FoodAPI.swift */; };
+		A0DA598228DA63AE0060577C /* FoodRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA598128DA63AE0060577C /* FoodRequest.swift */; };
+		A0DA598628DA64660060577C /* FoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA598528DA64660060577C /* FoodService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,11 @@
 		A0DA597128DA61440060577C /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		A0DA597328DA615D0060577C /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		A0DA597528DA617A0060577C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A0DA597928DA620D0060577C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		A0DA597C28DA62890060577C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A0DA597F28DA63770060577C /* FoodAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAPI.swift; sourceTree = "<group>"; };
+		A0DA598128DA63AE0060577C /* FoodRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRequest.swift; sourceTree = "<group>"; };
+		A0DA598528DA64660060577C /* FoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +144,10 @@
 				A0DA594928DA53920060577C /* App */,
 				A0DA591D28DA52A80060577C /* ViewController.swift */,
 				A0DA595028DA54BC0060577C /* Core */,
+				A0DA597728DA61DC0060577C /* Models */,
+				A0DA597828DA61E60060577C /* Services */,
 				A0DA595A28DA57140060577C /* Screens */,
+				A0DA597B28DA626C0060577C /* Configuration */,
 				A0DA594A28DA53B40060577C /* Resources */,
 			);
 			path = FoodBrowser;
@@ -234,6 +247,48 @@
 			isa = PBXGroup;
 			children = (
 				A0DA595C28DA57370060577C /* FoodCoordinator.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		A0DA597728DA61DC0060577C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA597E28DA636B0060577C /* Food */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0DA597828DA61E60060577C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA598428DA64570060577C /* Food */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0DA597B28DA626C0060577C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA597C28DA62890060577C /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A0DA597E28DA636B0060577C /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA597928DA620D0060577C /* Food.swift */,
+				A0DA598128DA63AE0060577C /* FoodRequest.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		A0DA598428DA64570060577C /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA597F28DA63770060577C /* FoodAPI.swift */,
+				A0DA598528DA64660060577C /* FoodService.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -379,11 +434,14 @@
 				A0DA596928DA5FAC0060577C /* UIViewController+Extension.swift in Sources */,
 				A0DA596528DA5F7E0060577C /* String+Extension.swift in Sources */,
 				A0DA591E28DA52A80060577C /* ViewController.swift in Sources */,
+				A0DA597A28DA620D0060577C /* Food.swift in Sources */,
 				A0DA595D28DA57370060577C /* FoodCoordinator.swift in Sources */,
+				A0DA597D28DA62890060577C /* Configuration.swift in Sources */,
 				A0DA596328DA5F6A0060577C /* Encodable+Extension.swift in Sources */,
 				A0DA596E28DA60820060577C /* SnapKit+UIViewStyle+Extension.swift in Sources */,
 				A0DA591A28DA52A80060577C /* AppDelegate.swift in Sources */,
 				A0DA591C28DA52A80060577C /* SceneDelegate.swift in Sources */,
+				A0DA598028DA63770060577C /* FoodAPI.swift in Sources */,
 				A0DA596128DA5F3C0060577C /* DateFormatter+Extension.swift in Sources */,
 				A0DA597228DA61440060577C /* HttpClient.swift in Sources */,
 				A0DA597428DA615D0060577C /* HttpError.swift in Sources */,
@@ -391,7 +449,9 @@
 				A0DA597028DA61300060577C /* HttpEndpoint.swift in Sources */,
 				A0DA595528DA552D0060577C /* AnyCoordinator.swift in Sources */,
 				A0DA595728DA55880060577C /* AnyMainView.swift in Sources */,
+				A0DA598228DA63AE0060577C /* FoodRequest.swift in Sources */,
 				A0DA597628DA617A0060577C /* API.swift in Sources */,
+				A0DA598628DA64660060577C /* FoodService.swift in Sources */,
 				A0DA596728DA5F940060577C /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

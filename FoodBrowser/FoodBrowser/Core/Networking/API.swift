@@ -7,4 +7,10 @@
 
 import Foundation
 
+protocol AnyService {
+    var client: HttpClientProvider { get }
+
+    init(client: HttpClientProvider)
+}
+
 enum API {}

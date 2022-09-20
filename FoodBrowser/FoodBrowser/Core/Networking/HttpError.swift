@@ -11,7 +11,7 @@ enum HttpError: LocalizedError {
     case invalidURL(String)
     case decode(Error)
     case noResponse
-    case badRequest(String)
+    case badRequest(Data)
     case unauthorized
     case unexpectedStatusCode(Int)
     case unknown
@@ -27,8 +27,8 @@ enum HttpError: LocalizedError {
             case .noResponse:
                 return "No response from server"
 
-            case .badRequest(let error):
-                return error
+            case .badRequest(let data):
+                return String(decoding: data, as: UTF8.self)
 
             case .unauthorized:
                 return "Session expired"

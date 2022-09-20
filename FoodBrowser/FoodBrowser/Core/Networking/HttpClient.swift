@@ -45,7 +45,7 @@ final class HttpClient: HttpClientProvider {
                 }
 
             case 400:
-                throw HttpError.badRequest(response.description)
+                throw HttpError.badRequest(data)
 
             case 401:
                 throw HttpError.unauthorized
