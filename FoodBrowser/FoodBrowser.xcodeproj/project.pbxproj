@@ -20,6 +20,12 @@
 		A0DA595728DA55880060577C /* AnyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA595628DA55880060577C /* AnyMainView.swift */; };
 		A0DA595928DA55CC0060577C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA595828DA55CC0060577C /* AppCoordinator.swift */; };
 		A0DA595D28DA57370060577C /* FoodCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA595C28DA57370060577C /* FoodCoordinator.swift */; };
+		A0DA595F28DA5F1D0060577C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA595E28DA5F1D0060577C /* Date+Extension.swift */; };
+		A0DA596128DA5F3C0060577C /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA596028DA5F3C0060577C /* DateFormatter+Extension.swift */; };
+		A0DA596328DA5F6A0060577C /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA596228DA5F6A0060577C /* Encodable+Extension.swift */; };
+		A0DA596528DA5F7E0060577C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA596428DA5F7E0060577C /* String+Extension.swift */; };
+		A0DA596728DA5F940060577C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA596628DA5F940060577C /* UITableView+Extension.swift */; };
+		A0DA596928DA5FAC0060577C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA596828DA5FAC0060577C /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		A0DA595628DA55880060577C /* AnyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMainView.swift; sourceTree = "<group>"; };
 		A0DA595828DA55CC0060577C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A0DA595C28DA57370060577C /* FoodCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCoordinator.swift; sourceTree = "<group>"; };
+		A0DA595E28DA5F1D0060577C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		A0DA596028DA5F3C0060577C /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		A0DA596228DA5F6A0060577C /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		A0DA596428DA5F7E0060577C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A0DA596628DA5F940060577C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A0DA596828DA5FAC0060577C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +188,12 @@
 		A0DA595228DA550E0060577C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A0DA595E28DA5F1D0060577C /* Date+Extension.swift */,
+				A0DA596028DA5F3C0060577C /* DateFormatter+Extension.swift */,
+				A0DA596228DA5F6A0060577C /* Encodable+Extension.swift */,
+				A0DA596428DA5F7E0060577C /* String+Extension.swift */,
+				A0DA596628DA5F940060577C /* UITableView+Extension.swift */,
+				A0DA596828DA5FAC0060577C /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -335,12 +353,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0DA595928DA55CC0060577C /* AppCoordinator.swift in Sources */,
+				A0DA596928DA5FAC0060577C /* UIViewController+Extension.swift in Sources */,
+				A0DA596528DA5F7E0060577C /* String+Extension.swift in Sources */,
 				A0DA591E28DA52A80060577C /* ViewController.swift in Sources */,
 				A0DA595D28DA57370060577C /* FoodCoordinator.swift in Sources */,
+				A0DA596328DA5F6A0060577C /* Encodable+Extension.swift in Sources */,
 				A0DA591A28DA52A80060577C /* AppDelegate.swift in Sources */,
 				A0DA591C28DA52A80060577C /* SceneDelegate.swift in Sources */,
+				A0DA596128DA5F3C0060577C /* DateFormatter+Extension.swift in Sources */,
+				A0DA595F28DA5F1D0060577C /* Date+Extension.swift in Sources */,
 				A0DA595528DA552D0060577C /* AnyCoordinator.swift in Sources */,
 				A0DA595728DA55880060577C /* AnyMainView.swift in Sources */,
+				A0DA596728DA5F940060577C /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
