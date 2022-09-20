@@ -10,13 +10,18 @@ import UIKit
 extension UIViewController {
     /// Show error Alert
     func showError(_ error: Error) {
-        showErrorMessage(error.localizedDescription)
+        showMessage(error.localizedDescription, isError: false)
     }
 
-    /// Show error Alert with message
-    func showErrorMessage(_ message: String) {
-        let alertViewController = UIAlertController(title: "Error".localized(), message: message, preferredStyle: .alert)
+    /// Show Alert with message
+    func showMessage(_ message: String, isError: Bool = false) {
+        let alertViewController = UIAlertController(
+            title: isError ? "Error".localized() : nil,
+            message: message,
+            preferredStyle: .alert
+        )
         alertViewController.addAction(UIAlertAction(title: "OK".localized(), style: .default))
+
         present(alertViewController, animated: true)
     }
 }

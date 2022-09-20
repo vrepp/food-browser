@@ -18,7 +18,8 @@ final class FoodCoordinator: AnyCoordinator {
     }
 
     func start() {
-        let viewController = ViewController()
+        let viewModel = FoodListViewModel()
+        let viewController = FoodListViewController(viewModel: viewModel)
 
         self.navigationController.setViewControllers([viewController], animated: false)
         self.navigationController.navigationBar.prefersLargeTitles = true
