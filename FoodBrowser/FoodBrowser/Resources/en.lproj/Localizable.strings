@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  FoodBrowser
+
+  Created by Valentin Rep on 20.09.2022..
+  
+*/
+
+"food.list.title" = "Food list";
